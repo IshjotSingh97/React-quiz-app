@@ -16,10 +16,11 @@
     
       function App() {
       	const [play,setPlay] = useState(false)
+        
         return (
         	<div>
         	<h1>Quiz App</h1>
-            <button>start</button>
+            <button onClick={ () => setPlay(true) }>start</button>
         </div>
         )
       }
