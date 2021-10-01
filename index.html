@@ -16,11 +16,16 @@
     
       function App() {
       	const [play,setPlay] = useState(false)
-        
+        const Quizbox = () => {
+        	return <h1> Quiz box </h1>
+        }
         return (
         	<div>
         	<h1>Quiz App</h1>
             <button onClick={ () => setPlay(true) }>start</button>
+            {
+            play && <Quizbox/>
+            }
         </div>
         )
       }
